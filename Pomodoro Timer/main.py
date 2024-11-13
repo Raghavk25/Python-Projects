@@ -69,7 +69,7 @@ window.title("Pomodoro")
 window.config(padx = 100, pady = 100, bg = BLACK)
 
 canvas = Canvas(width = 200, height = 224, bg = BLACK, highlightthickness = 0)
-tomato_img = PhotoImage(file = "Bootcamp python//2. Intermediate level//Day_28//tomato.png")
+tomato_img = PhotoImage(file = "./tomato.png")
 canvas.create_image(100, 112, image = tomato_img)
 timer = canvas.create_text(100, 130, text = "00:00", fill = WHITE, font = (FONT_NAME, 35, "bold"))
 canvas.grid(row = 1, column = 1)
