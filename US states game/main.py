@@ -25,7 +25,7 @@ while len(guessed_states) < 50:
     if answer_state == "Exit":
         unguessed_states = [state for state in all_states if state not in guessed_states]
         remaining_states = pandas.DataFrame(unguessed_states)
-        remaining_states.to_csv("./remaining states.csv")
+        remaining_states.to_csv("./remaining_states.csv")
         print(f"\nYou missed the following {len(remaining_states)} states: ")
         print(remaining_states)
         break
