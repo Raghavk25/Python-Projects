@@ -49,14 +49,14 @@ def save():
                             "Do you want to save this entry?")
         if is_ok:
             try:
-                with open("Bootcamp python//2. Intermediate level//Day_29//data.json", mode = "r") as data:
+                with open("./data.json", mode = "r") as data:
                     r_data = json.load(data)
                     r_data.update(new_data)
             except FileNotFoundError:
-                with open("Bootcamp python//2. Intermediate level//Day_29//data.json", mode = "w") as data:
+                with open("./data.json", mode = "w") as data:
                     json.dump(new_data, data, indent = 4)
             else:
-                with open("Bootcamp python//2. Intermediate level//Day_29//data.json", mode = "w") as data:
+                with open("./data.json", mode = "w") as data:
                     json.dump(r_data, data, indent = 4)
             finally:
                 messagebox.showinfo(title = "Success", message = "Your entry was saved successfully!")
@@ -65,7 +65,7 @@ def save():
 # ---------------------------- SEARCH PASSWORD ------------------------------- #
 def search_password():
     try:
-        with open("Bootcamp python//2. Intermediate level//Day_29//data.json", mode = "r") as data:
+        with open("./data.json", mode = "r") as data:
             contents = json.load(data)
         messagebox.showinfo(title = website_entry.get(), message = f"Email/Username: {contents[website_entry.get()]["Email"]}\nPassword: {contents[website_entry.get()]["Password"]}")
     except:
@@ -76,7 +76,7 @@ window = Tk()
 window.title("Password Manager")
 window.config(padx = 50, pady = 50, bg = BLACK)
 canvas = Canvas(width = 250, height = 250, bg = BLACK, highlightthickness = 0)
-logo = "Bootcamp python//2. Intermediate level//Day_29//logo.png"
+logo = "./logo.png"
 lock_image = PhotoImage(file = logo)
 canvas.create_image(125, 100, image = lock_image)
 canvas.grid(column = 1, row = 0)
