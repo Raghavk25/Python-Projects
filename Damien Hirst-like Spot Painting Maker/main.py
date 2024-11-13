@@ -15,7 +15,7 @@ turtle.bgcolor("black")
 # import colorgram
 
 # rgb_colors = []
-# colors = colorgram.extract('Bootcamp python/2. Intermediate level/Day_18/Damien_Hirst_Spot.jpg', 120)
+# colors = colorgram.extract('./Damien_Hirst_Spot.jpg', 120)
 # for color in colors:
 #     r = color.rgb.r
 #     g = color.rgb.g
