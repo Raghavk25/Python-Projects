@@ -1,5 +1,9 @@
 #The Pong game
 
+# MIT License
+# Copyright (c) 2024 Raghav Khanna
+# See the LICENSE file in the root of the repository for full license details.
+
 from turtle import Turtle, Screen
 from paddle import Paddle
 from ball import Ball
