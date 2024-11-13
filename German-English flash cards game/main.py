@@ -10,7 +10,7 @@ import pandas
 import time
 BACKGROUND_COLOR = "#B1DDC6"
 
-data = pandas.read_csv("Bootcamp python//2. Intermediate level//Day_31//German_frequency_list.csv")
+data = pandas.read_csv("./German_frequency_list.csv")
 word_dict = {row.German: row.English for (index, row) in data.iterrows()}
 r_word = {}
 
@@ -38,19 +38,19 @@ window.config(padx = 50, pady = 50, bg = BACKGROUND_COLOR)
 flip_timer = window.after(3000, func = flip_card)
 
 canvas = Canvas(width = 800, height = 526)
-card_back = PhotoImage(file = "Bootcamp python//2. Intermediate level//Day_31//card_back.png")
-card_front = PhotoImage(file = "Bootcamp python//2. Intermediate level//Day_31//card_front.png")
+card_back = PhotoImage(file = "./card_back.png")
+card_front = PhotoImage(file = "./card_front.png")
 page = canvas.create_image(400, 263, image = card_front)
 title = canvas.create_text(400, 150, text = "", font = ("Arial", 40))
 word = canvas.create_text(400, 263, text = "", font = ("Arial", 40, "bold"))
 canvas.config(bg = BACKGROUND_COLOR, highlightthickness = 0)
 canvas.grid(column = 0, row = 0, columnspan = 2)
 
-right_image = PhotoImage(file = "Bootcamp python//2. Intermediate level//Day_31//right.png")
+right_image = PhotoImage(file = "./right.png")
 right_button = Button(image = right_image, highlightthickness = 0, command = generate_random_word)
 right_button.grid(column = 1, row = 1)
 
-wrong_image = PhotoImage(file = "Bootcamp python//2. Intermediate level//Day_31//wrong.png")
+wrong_image = PhotoImage(file = "./wrong.png")
 wrong_button = Button(image = wrong_image, highlightthickness = 0, command = generate_random_word)
 wrong_button.grid(column = 0, row = 1)
 
