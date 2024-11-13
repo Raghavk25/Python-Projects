@@ -17,8 +17,8 @@ class QuizInterface:
         self.canvas = Canvas(height = 350, width = 400, bg = "white")
         self.canvas.grid(row = 1, column = 0, columnspan = 2, pady = 40)
         self.question_text = self.canvas.create_text(200, 175, width = 380, text = "Some Question", font = QUESTION_FONT)
-        self.right = PhotoImage(file = "Bootcamp python//2. Intermediate level//Day_34//true.png")
-        self.wrong = PhotoImage(file = "Bootcamp python//2. Intermediate level//Day_34//false.png")
+        self.right = PhotoImage(file = "./true.png")
+        self.wrong = PhotoImage(file = "./false.png")
 
         self.true_button = Button(image = self.right, highlightthickness = 0, command = self.true_pressed)
         self.true_button.grid(row = 2, column = 0)
