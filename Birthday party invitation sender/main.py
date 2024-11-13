@@ -1,5 +1,9 @@
 #Mail Merge
 
+# MIT License
+# Copyright (c) 2024 Raghav Khanna
+# See the LICENSE file in the root of the repository for full license details.
+
 with open("Bootcamp python//2. Intermediate level//Day_24//invitees.txt") as invitees:
     invite_list = invitees.readlines()
 
