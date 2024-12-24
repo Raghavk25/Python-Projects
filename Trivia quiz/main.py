@@ -1,9 +1,5 @@
 #Quizzler trivia quiz
 
-# MIT License
-# Copyright (c) 2024 Raghav Khanna
-# See the LICENSE file in the root of the repository for full license details.
-
 from question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
