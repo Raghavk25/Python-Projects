@@ -1,9 +1,5 @@
 # Automated Birthday Wisher
 
-# MIT License
-# Copyright (c) 2024 Raghav Khanna
-# See the LICENSE file in the root of the repository for full license details.
-
 import smtplib
 import datetime as dt
 import random
