@@ -1,7 +1,3 @@
-# MIT License
-# Copyright (c) 2024 Raghav Khanna
-# See the LICENSE file in the root of the repository for full license details.
-
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
